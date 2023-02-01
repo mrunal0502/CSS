@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /* element selector */
+        h1{
+            color: red;
+        }
+
+        div{
+            background-color: #d3d3d3;
+        }
+        /* id selector */ 
+        #first,h3{
+            color:black;
+            background-color: beige;
+        }
+        /* class selector */
+        .blue{
+            background-color: cyan;
+            border: 2px solid black;
+        }
+        /* Universal selector */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>This is CSS Selector page</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni asperiores similique porro dolor, sequi eius, modi labore tempora, quam sapiente praesentium non itaque! Repellendus nobis voluptates aperiam excepturi sed explicabo at, obcaecati nesciunt est?
+        </p>
+    </div>
+
+    <div id="first">
+        This is beige color
+
+    </div>
+    <hr>
+    <span class="blue">First</span>
+    <span class="blue">Second</span>
+    <span class="blue">Third</span>
+
+    <h3>This an example of group selectors</h3>
+    
+</body>
+</html>

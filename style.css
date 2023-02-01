@@ -1,3 +1,14 @@
-body{
-    background-color: #fff;
+.red{
+    background-color: rgb(215, 23, 103);
+    color: white;
+}
+
+.green{
+    background-color: green;
+    color:beige; 
+}
+
+*{
+    margin: 0;
+    padding: 0;
 }
