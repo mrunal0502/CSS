@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            background-color: red;
+            height: 455px;
+        }
+
+        /* img:hover{
+            width: 113px;
+            height: 455px;
+        } */
+
+        img{
+            /* width: 455px; */
+            /* transition-property: width;
+            transition-duration: 3s;
+            transition-timing-function: ease-in;
+            transition-delay: 3s;*/
+            transition: width 1s ease-in-out height 3s ease-in;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+         <img  id="myImg" src="index.png" alt="img">
+         <button id="btn">Toggle</button>
+        </div>
+    </div>
+    
+</body>
+
+<script>
+    myImg.style.width='146px';
+    myImg.style.height = '146px';
+    btn.addEventListener("Click", () =>{
+         if(myImg.style.width ==='146px'){
+            myImg.style.width = '546px';
+         }
+         else if(myImg.style.width === '546px'){
+            myImg.style.width = '146px';
+         }
+    })
+
+</script>
+
+</html>
