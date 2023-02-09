@@ -35,13 +35,28 @@
                 width: 100vw;
             }
         }
+
+        @keyframes rotate {
+            0%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(180deg);
+            }
+        }
+
+        img{
+            animation: rotate 2s ease-in infinite;
+        }
     </style>
 </head>
 <body>
 
     <div class="progress"></div>
     <header></header>
-    <main></main>
+    <main>
+        <img src="index.png" alt="amazon" width="122px">
+    </main>
     
 </body>
 </html>
