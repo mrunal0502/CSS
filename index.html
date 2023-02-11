@@ -4,31 +4,65 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS</title>
-    <h1>First Line of CSS</h1>
-
-     <!-- Using style tag -->
-    <style>
-        #first{
-            background-color: aqua;
-        }
-    </style>
-    <!-- by adding an external css file -->
+    <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+
 </head>
 <body>
-    <div id="first">
-       First
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="flipkart-logo.png" alt="logo">
+            </div>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+                <li><a href="About.html">About</a></li>
+            </ul>
+
+            <div class="search">
+                <input type="text" name="search" id="search" placeholder="Search for products, brands & more" style="font-family:Arial, Helvetica, sans-serif; color: #9a9a9a;">
+                <button class="btn">Search</button>
+            </div>
+        </nav>
+        
+    </header>
+    <main>
+ <div class="container">
+        <div class="slider">
+            <img src="https://source.unsplash.com/1200x500/?shopping, ecommerce" alt="banner">
+        </div>
+       
+       <div class="card">
+        <h2 class="my-2">Join the latest fashion trends</h2>
+        <div class="card-item">
+            <img src="https://source.unsplash.com/160x160/?fashion" alt="">
+        </div>
+        <div class="lines">
+            <p class="text-center">One piece</p>
+            <p class="text-center">Min 20% off</p>
+            <p class="text-center">Grab now</p>
+        </div> 
+
+
+        <div class="card-item">
+            <img src="https://source.unsplash.com/160x160/?fashion" alt="">
+        </div>
+        <div class="lines">
+            <p class="text-center">One piece</p>
+            <p class="text-center">Min 20% off</p>
+            <p class="text-center">Grab now</p>
+        </div> 
+    
+    
+
+ </div>
     </div>
-    <div id="second">
-        Second
-    </div>
-    <section class="red">
-       red
-    </section>
-    <section class="red bg-blue border=purple">
-        red and bg-blue
-    </section>
+    </main>
+    <footer  class="flex-all-center">
+       <p>Copyright &copy; 2023  The vMall</p> 
+    </footer>
     
 </body>
 </html>
